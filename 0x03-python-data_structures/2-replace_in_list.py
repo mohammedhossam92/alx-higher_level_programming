@@ -11,6 +11,7 @@ def replace_in_list(my_list, idx, element):
         else:
             if index == idx:
                 new_list.append(element)
+                my_list[index] = element
             else:
                 new_list.append(old_element)
     return new_list
