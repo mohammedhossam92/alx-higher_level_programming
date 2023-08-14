@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 new_list = []
 
+
 def replace_in_list(my_list, idx, element):
     for (index, old_element) in enumerate(my_list):
 
