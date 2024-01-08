@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const process = require('node:process');
+// const process = require('node:process');
 const firstArg = process.argv[2];
 
 if (firstArg === undefined) {
