@@ -7,7 +7,7 @@ if (isNaN(converted)) {
   for (let i = 0; i < converted; i++) {
     let row = '';
     for (let x = 0; x < converted; x++) {
-      row += 'x';
+      row += 'X';
     }
     console.log(row);
   }
