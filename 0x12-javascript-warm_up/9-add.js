@@ -6,8 +6,8 @@ const firstArgInt = parseInt(firstArg);
 const secArgInt = parseInt(secArg);
 
 function add (a, b) {
-	  const ans = a + b;
-	  console.log(ans);
+  const ans = a + b;
+  console.log(ans);
 }
 
 add(firstArgInt, secArgInt);
