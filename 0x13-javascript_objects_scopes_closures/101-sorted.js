@@ -23,4 +23,3 @@ for (const userId in originalDict) {
 
 // Print the new dictionary
 console.log(occurrencesDict);
-
