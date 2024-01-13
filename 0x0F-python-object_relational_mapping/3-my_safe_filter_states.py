@@ -1,9 +1,8 @@
 #!/usr/bin/python3
-
+"""list all states """
 import MySQLdb as sql
 from sys import argv as arg
 
-"""list all states """
 
 if __name__ == "__main__":
     conn = sql.connect(host="localhost", port=3306, user=arg[1],
