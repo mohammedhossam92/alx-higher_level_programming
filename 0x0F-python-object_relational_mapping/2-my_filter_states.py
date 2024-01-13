@@ -9,7 +9,7 @@ if __name__ == "__main__":
                        passwd=arg[2], db=arg[3], charset="utf8")
 
     cur = conn.cursor()
-    cur.execute("SELECT * FROM states WHERE name = '{}'"
+    cur.execute("SELECT * FROM states WHERE name LIKE BINARY '{}'"
                 " ORDER BY states.id ASC".format(arg[4]))
 
     rows = cur.fetchall()
