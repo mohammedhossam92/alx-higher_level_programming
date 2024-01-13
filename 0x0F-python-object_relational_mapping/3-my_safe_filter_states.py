@@ -10,8 +10,8 @@ if __name__ == "__main__":
                        passwd=arg[2], db=arg[3], charset="utf8")
 
     cur = conn.cursor()
-    query = "SELECT * FROM states WHERE name = %s ORDER BY states.id ASC"
-    cur.execute(query, (arg[4],))
+    cur.execute("SELECT * FROM states WHERE name = %s ORDER BY states.id ASC",
+                (arg[4],))
 
     rows = cur.fetchall()
 
@@ -20,3 +20,4 @@ if __name__ == "__main__":
 
     cur.close()
     conn.close()
+
